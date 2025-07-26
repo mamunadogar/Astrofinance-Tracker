@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a83279, #d38312);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 30px 25px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.3s ease;
+}
+
+input::placeholder {
+  color: #fdd7ef;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: #ff69b4;
+}
+
+button {
+  padding: 12px;
+  background-color: #ff4d94;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #e63e84;
+}
+
+#bookmark-list {
+  list-style: none;
+  padding: 0;
+}
+
+#bookmark-list li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+#bookmark-list a {
+  color: #ffccff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#bookmark-list a:hover {
+  text-decoration: underline;
+}
+
+#bookmark-list button {
+  background-color: #ff3366;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#bookmark-list button:hover {
+  background-color: #cc2954;
+}
